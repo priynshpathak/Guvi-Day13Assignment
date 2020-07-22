@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+      <h2 style="margin-bottom: 20px;">N digit random number generator</h2><br>
+      <div>Please enter the number "N" , random number will be generated for the same</div>
+      <label for="number">Enter digit 0 to 9</label>
+      <input type="text" class="number" id="number" value=""><br>
+      <label for="number2">Generated output</label>
+      <input type="text" class="number2" id="number2" value="" readonly><br>
+      <button onclick="myFunction()" id="random" class="random">Genrate Random number</button>
+     
+  </body>
+  <script>
+      function myFunction(){
+      var number =document.getElementById("number").value;
+      console.log(number);
+      var random=nDigitRandNumber(number).join("");
+      console.log(random);
+      document.getElementById("number2").value=random;
+      }
+  </script>
+</html>

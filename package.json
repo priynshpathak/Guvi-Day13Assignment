@@ -1,0 +1,20 @@
+{
+  "name": "day13assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jsOne.js",
+  "scripts": {
+    "build": "babel src -d output"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.19"
+  }
+}
